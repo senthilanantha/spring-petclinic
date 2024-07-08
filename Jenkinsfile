@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sleep 1
+        sh './mvnw clean compile'
       }
     }
 
